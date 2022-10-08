@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="flex items-center justify-between flex-wrap bg-sky-900 p-6">
+  <body class="font-sans bg-[#f3f2ef]">
+    <nav class="flex items-center justify-between flex-wrap bg-cyan-600 p-6">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <span class="font-semibold text-xl tracking-tight">Petshub</span>
       </div>
     </nav>
     <div class="flex justify-between gap-4 pl-10 pr-10">
       <div
-        class="w-3/12 mt-3 bg-white mb-6 shadow-lg rounded-xl border border-gray-300"
+        class="w-3/12 mt-3 bg-white mb-6 shadow-sm rounded-md border border-gray-300"
       >
         <div class="px-6 pt-10">
           <div class="flex flex-wrap justify-center">
@@ -79,26 +79,36 @@
           </div>
         </div>
       </div>
-      <div class="w-6/12 mx-2 mt-3 bg-white mb-6 rounded-xl">
-        <form class="bg-white p-2 border border-gray-300 rounded shadow-lg">
-          <div
-            class="flex h-12 mb-2 px-2 border border-gray-300 rounded-3xl hover:bg-gray-200"
-          >
-            <div class="w-12 h-full flex justify-center items-center">
-              <i
-                class="fas fa-edit text-xl text-gray-600"
-                aria-hidden="true"
-              ></i>
+      <div class="w-6/12 mx-2 mt-3 mb-6">
+        <form
+          class="bg-white p-2 pt-4 border border-gray-300 rounded shadow-sm rounded-md"
+        >
+          <div class="flex">
+            <div class="h-12 mb-2">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C5103AQGq029E_SSh5g/profile-displayphoto-shrink_100_100/0/1517517859175?e=1670457600&amp;v=beta&amp;t=CKjjwO7TurmmUDLRLp18r8T5DGD_UkY40FiwD0ZLE1w"
+                class="rounded-full border-none max-w-[50px] max-h-[50px]"
+              />
             </div>
-            <input
-              type="text"
-              placeholder="Start a post"
-              class="bg-transparent w-full h-full p-4 outline-none placeholder-gray-500"
-            />
+            <div
+              class="flex h-12 mb-2 w-full ml-2 border border-gray-300 rounded-xl hover:bg-gray-200"
+            >
+              <div class="w-12 h-full flex justify-center items-center">
+                <i
+                  class="fas fa-edit text-xl text-gray-600"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <input
+                type="text"
+                placeholder="Start a post"
+                class="bg-transparent w-full h-full p-4 outline-none placeholder-gray-500"
+              />
+            </div>
           </div>
 
           <!-- Icons -->
-          <div class="py-2 flex justify-between items-center">
+          <div class="py-2 p-20 flex justify-between items-center">
             <button
               class="py-3 px-2 rounded flex items-center hover:bg-gray-200"
             >
@@ -189,8 +199,10 @@
           </div>
         </form>
       </div>
-      <div class="w-3/12 mx-2 mt-3 bg-white mb-6 rounded-xl">
-        <div class="border border-gray-300 rounded bg-white p-2 shadow-lg">
+      <div class="w-3/12 mx-2 mt-3 mb-6">
+        <div
+          class="border border-gray-300 rounded bg-white p-2 shadow-sm rounded-md"
+        >
           <div class="flex justify-between items-center mb-2">
             <h2 class="text-xl">Add to your feed</h2>
             <button class="text-gray-400">
